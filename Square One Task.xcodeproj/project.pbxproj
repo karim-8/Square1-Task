@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */; };
+		8AE3DB1B28B1811400214BE6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */; };
+		8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1D28B1890600214BE6 /* NetworkService.swift */; };
 		8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */; };
 		8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */; };
 		8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */; };
@@ -17,6 +20,13 @@
 		8AF1A30828B1374E00C66F0B /* Square_One_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A30728B1374E00C66F0B /* Square_One_TaskTests.swift */; };
 		8AF1A31228B1374E00C66F0B /* Square_One_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A31128B1374E00C66F0B /* Square_One_TaskUITests.swift */; };
 		8AF1A31428B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */; };
+		8AF1A32F28B1525400C66F0B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A32E28B1525400C66F0B /* SplashViewModel.swift */; };
+		8AF1A33128B1526900C66F0B /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33028B1526900C66F0B /* SplashCoordinator.swift */; };
+		8AF1A33628B156B200C66F0B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33528B156B200C66F0B /* HomeScreen.swift */; };
+		8AF1A33828B156C000C66F0B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33728B156C000C66F0B /* HomeViewModel.swift */; };
+		8AF1A33A28B156CD00C66F0B /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33928B156CD00C66F0B /* HomeUseCase.swift */; };
+		8AF1A33C28B156D800C66F0B /* HomeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33B28B156D800C66F0B /* HomeRepo.swift */; };
+		8AF1A33F28B157A700C66F0B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A33E28B157A700C66F0B /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		8AE3DB1D28B1890600214BE6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8AF1A2EA28B1374B00C66F0B /* Square One Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square One Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +64,13 @@
 		8AF1A30D28B1374E00C66F0B /* Square One TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Square One TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1A31128B1374E00C66F0B /* Square_One_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_One_TaskUITests.swift; sourceTree = "<group>"; };
 		8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_One_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AF1A32E28B1525400C66F0B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		8AF1A33028B1526900C66F0B /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		8AF1A33528B156B200C66F0B /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		8AF1A33728B156C000C66F0B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8AF1A33928B156CD00C66F0B /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		8AF1A33B28B156D800C66F0B /* HomeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepo.swift; sourceTree = "<group>"; };
+		8AF1A33E28B157A700C66F0B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +98,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AE3DB1728B180FB00214BE6 /* Home Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */,
+				8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */,
+			);
+			path = "Home Cell";
+			sourceTree = "<group>";
+		};
+		8AE3DB1C28B188B200214BE6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8AE3DB1D28B1890600214BE6 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		8AF1A2E128B1374B00C66F0B = {
 			isa = PBXGroup;
 			children = (
@@ -101,13 +138,17 @@
 		8AF1A2EC28B1374B00C66F0B /* Square One Task */ = {
 			isa = PBXGroup;
 			children = (
-				8AF1A32528B138AE00C66F0B /* Home View */,
+				8AE3DB1C28B188B200214BE6 /* Network */,
+				8AF1A32D28B1521D00C66F0B /* Caching */,
+				8AF1A32C28B1521500C66F0B /* Data Models */,
+				8AF1A32B28B1520400C66F0B /* Extenstions */,
+				8AF1A32A28B151FA00C66F0B /* Remote */,
+				8AF1A32528B138AE00C66F0B /* Home Module */,
 				8AF1A32428B1389A00C66F0B /* SplashView */,
 				8AF1A32328B1388F00C66F0B /* Storyboards */,
 				8AF1A32228B1388200C66F0B /* Resources */,
 				8AF1A32128B1386D00C66F0B /* Configuration */,
 				8AF1A32028B1386600C66F0B /* Core */,
-				8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */,
 			);
 			path = "Square One Task";
 			sourceTree = "<group>";
@@ -166,25 +207,30 @@
 		8AF1A32428B1389A00C66F0B /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
-				8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */,
+				8AF1A33428B1563600C66F0B /* Coordinator */,
+				8AF1A33328B1562400C66F0B /* View Model */,
+				8AF1A33228B1561C00C66F0B /* View */,
 			);
 			path = SplashView;
 			sourceTree = "<group>";
 		};
-		8AF1A32528B138AE00C66F0B /* Home View */ = {
+		8AF1A32528B138AE00C66F0B /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
+				8AF1A33D28B1579200C66F0B /* Coordinator */,
 				8AF1A32928B138E300C66F0B /* Repository */,
 				8AF1A32828B138D900C66F0B /* UseCase */,
 				8AF1A32728B138CF00C66F0B /* ViewModels */,
 				8AF1A32628B138C800C66F0B /* View */,
 			);
-			path = "Home View";
+			path = "Home Module";
 			sourceTree = "<group>";
 		};
 		8AF1A32628B138C800C66F0B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8AE3DB1728B180FB00214BE6 /* Home Cell */,
+				8AF1A33528B156B200C66F0B /* HomeScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +238,7 @@
 		8AF1A32728B138CF00C66F0B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8AF1A33728B156C000C66F0B /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -199,6 +246,7 @@
 		8AF1A32828B138D900C66F0B /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				8AF1A33928B156CD00C66F0B /* HomeUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -206,8 +254,70 @@
 		8AF1A32928B138E300C66F0B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				8AF1A33B28B156D800C66F0B /* HomeRepo.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		8AF1A32A28B151FA00C66F0B /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		8AF1A32B28B1520400C66F0B /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		8AF1A32C28B1521500C66F0B /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		8AF1A32D28B1521D00C66F0B /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		8AF1A33228B1561C00C66F0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AF1A33328B1562400C66F0B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A32E28B1525400C66F0B /* SplashViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		8AF1A33428B1563600C66F0B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A33028B1526900C66F0B /* SplashCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8AF1A33D28B1579200C66F0B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A33E28B157A700C66F0B /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +426,7 @@
 			files = (
 				8AF1A2FD28B1374E00C66F0B /* LaunchScreen.storyboard in Resources */,
 				8AF1A2FA28B1374E00C66F0B /* Assets.xcassets in Resources */,
+				8AE3DB1B28B1811400214BE6 /* HomeTableViewCell.xib in Resources */,
 				8AF1A2F528B1374B00C66F0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,10 +452,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF1A33A28B156CD00C66F0B /* HomeUseCase.swift in Sources */,
+				8AF1A32F28B1525400C66F0B /* SplashViewModel.swift in Sources */,
 				8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */,
+				8AF1A33628B156B200C66F0B /* HomeScreen.swift in Sources */,
+				8AF1A33C28B156D800C66F0B /* HomeRepo.swift in Sources */,
+				8AF1A33828B156C000C66F0B /* HomeViewModel.swift in Sources */,
+				8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */,
 				8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */,
+				8AF1A33128B1526900C66F0B /* SplashCoordinator.swift in Sources */,
 				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
 				8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */,
+				8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */,
+				8AF1A33F28B157A700C66F0B /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
