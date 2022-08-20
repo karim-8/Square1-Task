@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */; };
+		8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */; };
+		8AF1A2F228B1374B00C66F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F128B1374B00C66F0B /* ViewController.swift */; };
+		8AF1A2F528B1374B00C66F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F328B1374B00C66F0B /* Main.storyboard */; };
+		8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */; };
+		8AF1A2FA28B1374E00C66F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F928B1374E00C66F0B /* Assets.xcassets */; };
+		8AF1A2FD28B1374E00C66F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1A2FB28B1374E00C66F0B /* LaunchScreen.storyboard */; };
+		8AF1A30828B1374E00C66F0B /* Square_One_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A30728B1374E00C66F0B /* Square_One_TaskTests.swift */; };
+		8AF1A31228B1374E00C66F0B /* Square_One_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A31128B1374E00C66F0B /* Square_One_TaskUITests.swift */; };
+		8AF1A31428B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AF1A30428B1374E00C66F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF1A2E228B1374B00C66F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF1A2E928B1374B00C66F0B;
+			remoteInfo = "Square One Task";
+		};
+		8AF1A30E28B1374E00C66F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AF1A2E228B1374B00C66F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AF1A2E928B1374B00C66F0B;
+			remoteInfo = "Square One Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AF1A2EA28B1374B00C66F0B /* Square One Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square One Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8AF1A2F128B1374B00C66F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AF1A2F428B1374B00C66F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AF1A2F728B1374B00C66F0B /* Square_One_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Square_One_Task.xcdatamodel; sourceTree = "<group>"; };
+		8AF1A2F928B1374E00C66F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8AF1A2FC28B1374E00C66F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8AF1A2FE28B1374E00C66F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AF1A30328B1374E00C66F0B /* Square One TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Square One TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF1A30728B1374E00C66F0B /* Square_One_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_One_TaskTests.swift; sourceTree = "<group>"; };
+		8AF1A30D28B1374E00C66F0B /* Square One TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Square One TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AF1A31128B1374E00C66F0B /* Square_One_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_One_TaskUITests.swift; sourceTree = "<group>"; };
+		8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square_One_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AF1A2E728B1374B00C66F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A30028B1374E00C66F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A30A28B1374E00C66F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AF1A2E128B1374B00C66F0B = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2EC28B1374B00C66F0B /* Square One Task */,
+				8AF1A30628B1374E00C66F0B /* Square One TaskTests */,
+				8AF1A31028B1374E00C66F0B /* Square One TaskUITests */,
+				8AF1A2EB28B1374B00C66F0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AF1A2EB28B1374B00C66F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2EA28B1374B00C66F0B /* Square One Task.app */,
+				8AF1A30328B1374E00C66F0B /* Square One TaskTests.xctest */,
+				8AF1A30D28B1374E00C66F0B /* Square One TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AF1A2EC28B1374B00C66F0B /* Square One Task */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */,
+				8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */,
+				8AF1A2F128B1374B00C66F0B /* ViewController.swift */,
+				8AF1A2F328B1374B00C66F0B /* Main.storyboard */,
+				8AF1A2F928B1374E00C66F0B /* Assets.xcassets */,
+				8AF1A2FB28B1374E00C66F0B /* LaunchScreen.storyboard */,
+				8AF1A2FE28B1374E00C66F0B /* Info.plist */,
+				8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */,
+			);
+			path = "Square One Task";
+			sourceTree = "<group>";
+		};
+		8AF1A30628B1374E00C66F0B /* Square One TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A30728B1374E00C66F0B /* Square_One_TaskTests.swift */,
+			);
+			path = "Square One TaskTests";
+			sourceTree = "<group>";
+		};
+		8AF1A31028B1374E00C66F0B /* Square One TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A31128B1374E00C66F0B /* Square_One_TaskUITests.swift */,
+				8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */,
+			);
+			path = "Square One TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AF1A2E928B1374B00C66F0B /* Square One Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF1A31728B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One Task" */;
+			buildPhases = (
+				8AF1A2E628B1374B00C66F0B /* Sources */,
+				8AF1A2E728B1374B00C66F0B /* Frameworks */,
+				8AF1A2E828B1374B00C66F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Square One Task";
+			productName = "Square One Task";
+			productReference = 8AF1A2EA28B1374B00C66F0B /* Square One Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AF1A30228B1374E00C66F0B /* Square One TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF1A31A28B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One TaskTests" */;
+			buildPhases = (
+				8AF1A2FF28B1374E00C66F0B /* Sources */,
+				8AF1A30028B1374E00C66F0B /* Frameworks */,
+				8AF1A30128B1374E00C66F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF1A30528B1374E00C66F0B /* PBXTargetDependency */,
+			);
+			name = "Square One TaskTests";
+			productName = "Square One TaskTests";
+			productReference = 8AF1A30328B1374E00C66F0B /* Square One TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8AF1A30C28B1374E00C66F0B /* Square One TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF1A31D28B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One TaskUITests" */;
+			buildPhases = (
+				8AF1A30928B1374E00C66F0B /* Sources */,
+				8AF1A30A28B1374E00C66F0B /* Frameworks */,
+				8AF1A30B28B1374E00C66F0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AF1A30F28B1374E00C66F0B /* PBXTargetDependency */,
+			);
+			name = "Square One TaskUITests";
+			productName = "Square One TaskUITests";
+			productReference = 8AF1A30D28B1374E00C66F0B /* Square One TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AF1A2E228B1374B00C66F0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8AF1A2E928B1374B00C66F0B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					8AF1A30228B1374E00C66F0B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8AF1A2E928B1374B00C66F0B;
+					};
+					8AF1A30C28B1374E00C66F0B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8AF1A2E928B1374B00C66F0B;
+					};
+				};
+			};
+			buildConfigurationList = 8AF1A2E528B1374B00C66F0B /* Build configuration list for PBXProject "Square One Task" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AF1A2E128B1374B00C66F0B;
+			productRefGroup = 8AF1A2EB28B1374B00C66F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AF1A2E928B1374B00C66F0B /* Square One Task */,
+				8AF1A30228B1374E00C66F0B /* Square One TaskTests */,
+				8AF1A30C28B1374E00C66F0B /* Square One TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AF1A2E828B1374B00C66F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF1A2FD28B1374E00C66F0B /* LaunchScreen.storyboard in Resources */,
+				8AF1A2FA28B1374E00C66F0B /* Assets.xcassets in Resources */,
+				8AF1A2F528B1374B00C66F0B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A30128B1374E00C66F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A30B28B1374E00C66F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AF1A2E628B1374B00C66F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */,
+				8AF1A2F228B1374B00C66F0B /* ViewController.swift in Sources */,
+				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
+				8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A2FF28B1374E00C66F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF1A30828B1374E00C66F0B /* Square_One_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AF1A30928B1374E00C66F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF1A31228B1374E00C66F0B /* Square_One_TaskUITests.swift in Sources */,
+				8AF1A31428B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AF1A30528B1374E00C66F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF1A2E928B1374B00C66F0B /* Square One Task */;
+			targetProxy = 8AF1A30428B1374E00C66F0B /* PBXContainerItemProxy */;
+		};
+		8AF1A30F28B1374E00C66F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AF1A2E928B1374B00C66F0B /* Square One Task */;
+			targetProxy = 8AF1A30E28B1374E00C66F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AF1A2F328B1374B00C66F0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF1A2F428B1374B00C66F0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AF1A2FB28B1374E00C66F0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AF1A2FC28B1374E00C66F0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AF1A31528B1374E00C66F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8AF1A31628B1374E00C66F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AF1A31828B1374E00C66F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Square One Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8AF1A31928B1374E00C66F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Square One Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8AF1A31B28B1374E00C66F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Square One Task.app/Square One Task";
+			};
+			name = Debug;
+		};
+		8AF1A31C28B1374E00C66F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Square One Task.app/Square One Task";
+			};
+			name = Release;
+		};
+		8AF1A31E28B1374E00C66F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Square One Task";
+			};
+			name = Debug;
+		};
+		8AF1A31F28B1374E00C66F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karim.Square-One-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Square One Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AF1A2E528B1374B00C66F0B /* Build configuration list for PBXProject "Square One Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF1A31528B1374E00C66F0B /* Debug */,
+				8AF1A31628B1374E00C66F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF1A31728B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF1A31828B1374E00C66F0B /* Debug */,
+				8AF1A31928B1374E00C66F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF1A31A28B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF1A31B28B1374E00C66F0B /* Debug */,
+				8AF1A31C28B1374E00C66F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF1A31D28B1374E00C66F0B /* Build configuration list for PBXNativeTarget "Square One TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AF1A31E28B1374E00C66F0B /* Debug */,
+				8AF1A31F28B1374E00C66F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8AF1A2F728B1374B00C66F0B /* Square_One_Task.xcdatamodel */,
+			);
+			currentVersion = 8AF1A2F728B1374B00C66F0B /* Square_One_Task.xcdatamodel */;
+			path = Square_One_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8AF1A2E228B1374B00C66F0B /* Project object */;
+}
