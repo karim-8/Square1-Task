@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */; };
 		8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */; };
-		8AF1A2F228B1374B00C66F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F128B1374B00C66F0B /* ViewController.swift */; };
+		8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */; };
 		8AF1A2F528B1374B00C66F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F328B1374B00C66F0B /* Main.storyboard */; };
 		8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */; };
 		8AF1A2FA28B1374E00C66F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F928B1374E00C66F0B /* Assets.xcassets */; };
@@ -40,7 +40,7 @@
 		8AF1A2EA28B1374B00C66F0B /* Square One Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square One Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8AF1A2F128B1374B00C66F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		8AF1A2F428B1374B00C66F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AF1A2F728B1374B00C66F0B /* Square_One_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Square_One_Task.xcdatamodel; sourceTree = "<group>"; };
 		8AF1A2F928B1374E00C66F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,13 +101,12 @@
 		8AF1A2EC28B1374B00C66F0B /* Square One Task */ = {
 			isa = PBXGroup;
 			children = (
-				8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */,
-				8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */,
-				8AF1A2F128B1374B00C66F0B /* ViewController.swift */,
-				8AF1A2F328B1374B00C66F0B /* Main.storyboard */,
-				8AF1A2F928B1374E00C66F0B /* Assets.xcassets */,
-				8AF1A2FB28B1374E00C66F0B /* LaunchScreen.storyboard */,
-				8AF1A2FE28B1374E00C66F0B /* Info.plist */,
+				8AF1A32528B138AE00C66F0B /* Home View */,
+				8AF1A32428B1389A00C66F0B /* SplashView */,
+				8AF1A32328B1388F00C66F0B /* Storyboards */,
+				8AF1A32228B1388200C66F0B /* Resources */,
+				8AF1A32128B1386D00C66F0B /* Configuration */,
+				8AF1A32028B1386600C66F0B /* Core */,
 				8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */,
 			);
 			path = "Square One Task";
@@ -128,6 +127,87 @@
 				8AF1A31328B1374E00C66F0B /* Square_One_TaskUITestsLaunchTests.swift */,
 			);
 			path = "Square One TaskUITests";
+			sourceTree = "<group>";
+		};
+		8AF1A32028B1386600C66F0B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */,
+				8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8AF1A32128B1386D00C66F0B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2FE28B1374E00C66F0B /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		8AF1A32228B1388200C66F0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2FB28B1374E00C66F0B /* LaunchScreen.storyboard */,
+				8AF1A2F928B1374E00C66F0B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AF1A32328B1388F00C66F0B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2F328B1374B00C66F0B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8AF1A32428B1389A00C66F0B /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */,
+			);
+			path = SplashView;
+			sourceTree = "<group>";
+		};
+		8AF1A32528B138AE00C66F0B /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				8AF1A32928B138E300C66F0B /* Repository */,
+				8AF1A32828B138D900C66F0B /* UseCase */,
+				8AF1A32728B138CF00C66F0B /* ViewModels */,
+				8AF1A32628B138C800C66F0B /* View */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		8AF1A32628B138C800C66F0B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AF1A32728B138CF00C66F0B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8AF1A32828B138D900C66F0B /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		8AF1A32928B138E300C66F0B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */,
-				8AF1A2F228B1374B00C66F0B /* ViewController.swift in Sources */,
+				8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */,
 				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
 				8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */,
 			);
@@ -444,7 +524,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Square One Task/Info.plist";
+				INFOPLIST_FILE = "Square One Task/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -471,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Square One Task/Info.plist";
+				INFOPLIST_FILE = "Square One Task/Configuration/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
