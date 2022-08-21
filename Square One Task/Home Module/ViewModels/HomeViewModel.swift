@@ -17,11 +17,19 @@ class HomeViewModel {
     //PROPERTIES
     private var coordinator: HomeCoordinator?
     private var viewController: UIViewController
+    private var usecase: HomeSearchUseCase?
+    private var repo = HomeRepo()
     
     //MARK:- INIT
     init(coordinator: HomeCoordinator, view: UIViewController) {
         self.coordinator = coordinator
         self.viewController = view
+    }
+    
+    //MARK:- GET DATA \
+    func getData() {
+        usecase = HomeSearchUseCase(repo: repo)
+        usecase?.getSearchData()
     }
     
 }
