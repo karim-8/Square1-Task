@@ -26,7 +26,6 @@ class HomeRemote: HomeRemoteProtocol {
                 return
                 
             case .failure(let error):
-                print("Saaaadly I received \(error)")
                 completion(.failure(error))
                 return
             }

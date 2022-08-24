@@ -14,7 +14,7 @@ class HomeScreenViewController: UIViewController {
     private var coordinator: HomeCoordinator?
     @IBOutlet weak var citiesTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-
+    var pageNumber = 1
     var worldData = [Items]()
     
 
@@ -37,7 +37,7 @@ class HomeScreenViewController: UIViewController {
     
     //MARK:- FETCH USER DATA
     private func fetchUserData() {
-        viewModel?.getData()
+        viewModel?.getData(page: pageNumber)
     }
     
     //MARK:- UPDATE VIEW
@@ -74,3 +74,14 @@ class HomeScreenViewController: UIViewController {
 
 
 
+extension HomeScreenViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let position = scrollView.contentOffset.y
+        if position > citiesTableView.contentSize.height-100-scrollView.frame.size.height {
+            pageNumber+=1
+            viewModel?.getData(page: pageNumber)
+            updateView()
+            
+        }
+    }
+}

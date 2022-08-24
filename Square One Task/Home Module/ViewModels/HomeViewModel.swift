@@ -11,7 +11,7 @@ protocol HomeViewModelProtocol {
     func getData()
 }
 
-class HomeViewModel: HomeViewModelProtocol {
+class HomeViewModel {
     
     //PROPERTIES
     private var coordinator: HomeCoordinator?
@@ -27,8 +27,8 @@ class HomeViewModel: HomeViewModelProtocol {
     }
     
     //MARK:- GET DATA
-    func getData() {
-        usecase.getCitiesData(urlPath: setFullDataUrl()) { [weak self] result in
+    func getData(page: Int) {
+        usecase.getCitiesData(urlPath: setFullDataUrl(pageNum: page)) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.dataNames = data.data?.items ?? [Items]()
@@ -43,11 +43,10 @@ class HomeViewModel: HomeViewModelProtocol {
         }
     }
     
-    func setFullDataUrl() -> request {
+    func setFullDataUrl(pageNum: Int) -> request {
         let baseUrl = Constants.baseUrl
-        let paramters = "\(Constants.filter)ka&\(Constants.page)2&\(Constants.include)"
+        let paramters = "\(Constants.filter)ka&\(Constants.page)\(pageNum)&\(Constants.include)"
      return request(url: baseUrl, param: paramters)
-        //https://connect-demo.mobile1.io/square1/connect/v1/city?filter%5B0%5D%5Bname%5D%5Bcontains%5D=ka&page=2&include=country
     }
     
     func getFullData() -> [Items] {

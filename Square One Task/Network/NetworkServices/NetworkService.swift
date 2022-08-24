@@ -12,6 +12,7 @@ class NetworkClient {
     func get(url: RequestProtocol, completion: @escaping (Result<Data,Error>)-> ()) {
         
         URLSession.shared.dataTask(with: url.url) { (data, response, error) in
+            print("The Url is ...\n \(url.url)")
             if error != nil {
                 completion(.failure(NetwrokError.netwrokError))
                 return

@@ -22,7 +22,6 @@ class HomeUseCase: HomeUseCaseProtocol {
         repo.getCitiesData(urlPath: urlPath) {  result in
             switch result {
             case .success(let data):
-                print("Succcccccess from useCase \(data)")
                 completion(.success(data))
                 return
                 
