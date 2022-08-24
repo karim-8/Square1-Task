@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeRepoProtocol {
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+    func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 class HomeRepo: HomeRepoProtocol {
     
@@ -18,7 +18,7 @@ class HomeRepo: HomeRepoProtocol {
 
     
     //MARK:- GET CITIES DATA
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
  
         remote.getCitiesData(urlPath: urlPath) { result in
             switch result {

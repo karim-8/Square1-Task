@@ -8,7 +8,7 @@
 import Foundation
 
 protocol HomeUseCaseProtocol {
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+    func getCitiesData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 
 class HomeUseCase: HomeUseCaseProtocol {
@@ -17,12 +17,12 @@ class HomeUseCase: HomeUseCaseProtocol {
     let repo = HomeRepo()
     
     //MARK:- GET SEARCH DATA
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getCitiesData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
         
         repo.getCitiesData(urlPath: urlPath) {  result in
             switch result {
             case .success(let data):
-                print("Succcccccess from useCase")
+                print("Succcccccess from useCase \(data)")
                 completion(.success(data))
                 return
                 

@@ -12,6 +12,6 @@ class Constants {
     static var baseUrl = "http://connect-demo.mobile1.io/square1/connect/v1/city"
     static var page = "page="
     static var include = "include=country"
-    static var filter = "filter[0][name][contains]="
+    static var filter = "?filter[0][name][contains]="
 }
 

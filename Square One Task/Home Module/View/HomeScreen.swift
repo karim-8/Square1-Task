@@ -14,19 +14,38 @@ class HomeScreenViewController: UIViewController {
     private var coordinator: HomeCoordinator?
     @IBOutlet weak var citiesTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
-    var fakeData = ["Karims","Madlene","Tomhas"]
-    var filterdData: [String]?
-    
+
     var worldData = [Items]()
     
 
     //MARK:- VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        fetchUserData()
         setupTableView()
         setuptTableViewCell()
         setupSearchData()
-        
+        updateView()
+    }
+    
+    //MARK:- SETUP VIEW
+    private func setupView() {
+        coordinator = HomeCoordinator()
+        viewModel = HomeViewModel(coordinator: coordinator ?? HomeCoordinator(), view: self)
+    }
+    
+    //MARK:- FETCH USER DATA
+    private func fetchUserData() {
+        viewModel?.getData()
+    }
+    
+    //MARK:- UPDATE VIEW
+    private func updateView() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
+            worldData = viewModel?.getFullData() ?? [Items]()
+            citiesTableView.reloadData()
+        }
     }
     
     //MARK:- SETUP TABLE VIEW
@@ -37,7 +56,7 @@ class HomeScreenViewController: UIViewController {
     //MARK:- SETUP SEARCH BAR
     private func setupSearchData() {
        searchBar.delegate = self
-       filterdData = fakeData
+      // filterdData = fakeData
     }
     
     //MARK:- SETUP TABLE VIEW CELL
@@ -45,18 +64,6 @@ class HomeScreenViewController: UIViewController {
         let nib = UINib(nibName: HomeTableViewCell.cellIdentifier, bundle: nil)
         citiesTableView.register(nib, forCellReuseIdentifier: HomeTableViewCell.cellIdentifier)
         citiesTableView.reloadData()
-    }
-    
-    //MARK:- FETCH USER DATA
-    private func fetchUserData() {
-        viewModel?.getData()
-    }
-    
-    private func getDaa() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-            userData = viewModel?.getUserData() ?? [UsersDataModel]()
-            dataListItems.reloadData()
-        }
     }
     
     //MARK:- DEINIT

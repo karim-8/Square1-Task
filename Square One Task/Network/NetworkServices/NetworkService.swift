@@ -9,9 +9,9 @@ import Foundation
 
 class NetworkClient {
     
-    func get(url: URLRequest, completion: @escaping (Result<Data,Error>)-> ()) {
+    func get(url: RequestProtocol, completion: @escaping (Result<Data,Error>)-> ()) {
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        URLSession.shared.dataTask(with: url.url) { (data, response, error) in
             if error != nil {
                 completion(.failure(NetwrokError.netwrokError))
                 return

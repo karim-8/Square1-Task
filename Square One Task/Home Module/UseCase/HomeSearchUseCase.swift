@@ -7,7 +7,7 @@
 
 import Foundation
 protocol HomeSearchUseCaseProtocol {
-    func getSearchData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+    func getSearchData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 
 class HomeSearchUseCase: HomeSearchUseCaseProtocol {
@@ -16,7 +16,7 @@ class HomeSearchUseCase: HomeSearchUseCaseProtocol {
     let repo = HomeRepo()
     
     //MARK:- GET SEARCH DATA
-    func getSearchData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getSearchData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
         
         repo.getCitiesData(urlPath: urlPath) {  result in
             switch result {

@@ -8,14 +8,15 @@
 import Foundation
 
 protocol HomeRemoteProtocol {
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+    func getCitiesData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 
 class HomeRemote: HomeRemoteProtocol {
     
     var remoteData = CitiesDataModel()
 
-    func getCitiesData(urlPath: URLRequest, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+
         NetworkClient().get(url: urlPath) { [weak self] result in
             switch result {
                 

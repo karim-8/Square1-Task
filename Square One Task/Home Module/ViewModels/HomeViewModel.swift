@@ -27,44 +27,30 @@ class HomeViewModel: HomeViewModelProtocol {
     }
     
     //MARK:- GET DATA
-    //urlPath: URLRequest,completion: @escaping (Result<[Items],Error>)-> ()
     func getData() {
-        
-        usecase.getCitiesData(urlPath: urlPath) { [weak self] result in
-            
+        usecase.getCitiesData(urlPath: setFullDataUrl()) { [weak self] result in
             switch result {
             case .success(let data):
                 self?.dataNames = data.data?.items ?? [Items]()
-                completion(.success(self?.dataNames ?? [Items]()))
                 return
                 
             case .failure(let error):
-                completion(.failure(error))
+                print("Errrrror is ....\(error)")
+                //View Alert controller with error
+               /// completion(.failure(error))
                 return
             }
         }
     }
     
-    func setBaseUrl() -> URLComponents {
-        var url = URLComponents(string: Constants.baseUrl)
-        url?.queryItems = [
-            URLQueryItem(name: "filter", value: Constants.filter),
-            URLQueryItem(name: "page", value: "\(Constants.page)2"),
-            URLQueryItem(name: "include", value: Constants.include)
-        ]
-        let test = Ur
-        let fullUrl = URLRequest(url: url)
+    func setFullDataUrl() -> request {
+        let baseUrl = Constants.baseUrl
+        let paramters = "\(Constants.filter)ka&\(Constants.page)2&\(Constants.include)"
+     return request(url: baseUrl, param: paramters)
+        //https://connect-demo.mobile1.io/square1/connect/v1/city?filter%5B0%5D%5Bname%5D%5Bcontains%5D=ka&page=2&include=country
     }
     
     func getFullData() -> [Items] {
         return dataNames
     }
-    
-    ///http://connect-demo.mobile1.io/square1/connect/v1/city?
-    ///filter[0]
-    ///[name]
-    ///[contains]=ka&page=2&include =country
-    
-    
-
 }
