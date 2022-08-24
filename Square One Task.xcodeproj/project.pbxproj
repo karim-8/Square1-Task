@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8A6A58FE28B28D3200033E10 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A58FD28B28D3200033E10 /* NetworkHelper.swift */; };
+		8A6A58FE28B28D3200033E10 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A58FD28B28D3200033E10 /* NetworkRequest.swift */; };
 		8A6A590028B28E2600033E10 /* HomeFilterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A58FF28B28E2600033E10 /* HomeFilterUseCase.swift */; };
 		8A6A590228B2902000033E10 /* CitiesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A590128B2902000033E10 /* CitiesDataModel.swift */; };
 		8A6A590428B2971300033E10 /* HomeRepoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A590328B2971300033E10 /* HomeRepoCache.swift */; };
+		8A86979528B638CE009057D1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979428B638CE009057D1 /* NetworkError.swift */; };
+		8A86979728B63920009057D1 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979628B63920009057D1 /* RequestProtocol.swift */; };
+		8A86979928B63971009057D1 /* NetworkDomains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979828B63971009057D1 /* NetworkDomains.swift */; };
+		8A86979C28B63EAD009057D1 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979B28B63EAD009057D1 /* LocalStorage.swift */; };
+		8A9E1C5B28B3C55500DF25BB /* HomeRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */; };
 		8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */; };
 		8AE3DB1B28B1811400214BE6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */; };
 		8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1D28B1890600214BE6 /* NetworkService.swift */; };
@@ -51,10 +56,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8A6A58FD28B28D3200033E10 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		8A6A58FD28B28D3200033E10 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		8A6A58FF28B28E2600033E10 /* HomeFilterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFilterUseCase.swift; sourceTree = "<group>"; };
 		8A6A590128B2902000033E10 /* CitiesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDataModel.swift; sourceTree = "<group>"; };
 		8A6A590328B2971300033E10 /* HomeRepoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepoCache.swift; sourceTree = "<group>"; };
+		8A86979428B638CE009057D1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8A86979628B63920009057D1 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		8A86979828B63971009057D1 /* NetworkDomains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDomains.swift; sourceTree = "<group>"; };
+		8A86979B28B63EAD009057D1 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemote.swift; sourceTree = "<group>"; };
 		8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		8AE3DB1D28B1890600214BE6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -106,6 +116,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A86979A28B63E0E009057D1 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8A86979B28B63EAD009057D1 /* LocalStorage.swift */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
 		8AE3DB1728B180FB00214BE6 /* Home Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				8AE3DB1D28B1890600214BE6 /* NetworkService.swift */,
-				8A6A58FD28B28D3200033E10 /* NetworkHelper.swift */,
+				8A6A58FD28B28D3200033E10 /* NetworkRequest.swift */,
+				8A86979628B63920009057D1 /* RequestProtocol.swift */,
+				8A86979428B638CE009057D1 /* NetworkError.swift */,
+				8A86979828B63971009057D1 /* NetworkDomains.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -147,11 +168,10 @@
 		8AF1A2EC28B1374B00C66F0B /* Square One Task */ = {
 			isa = PBXGroup;
 			children = (
-				8AE3DB1C28B188B200214BE6 /* Network */,
 				8AF1A32D28B1521D00C66F0B /* Caching */,
+				8AE3DB1C28B188B200214BE6 /* Network */,
 				8AF1A32C28B1521500C66F0B /* Data Models */,
 				8AF1A32B28B1520400C66F0B /* Extenstions */,
-				8AF1A32A28B151FA00C66F0B /* Remote */,
 				8AF1A32528B138AE00C66F0B /* Home Module */,
 				8AF1A32428B1389A00C66F0B /* SplashView */,
 				8AF1A32328B1388F00C66F0B /* Storyboards */,
@@ -226,11 +246,13 @@
 		8AF1A32528B138AE00C66F0B /* Home Module */ = {
 			isa = PBXGroup;
 			children = (
-				8AF1A33D28B1579200C66F0B /* Coordinator */,
+				8A86979A28B63E0E009057D1 /* LocalStorage */,
+				8AF1A32A28B151FA00C66F0B /* Remote */,
 				8AF1A32928B138E300C66F0B /* Repository */,
 				8AF1A32828B138D900C66F0B /* UseCase */,
 				8AF1A32728B138CF00C66F0B /* ViewModels */,
 				8AF1A32628B138C800C66F0B /* View */,
+				8AF1A33D28B1579200C66F0B /* Coordinator */,
 			);
 			path = "Home Module";
 			sourceTree = "<group>";
@@ -273,8 +295,10 @@
 		8AF1A32A28B151FA00C66F0B /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */,
 			);
-			path = Remote;
+			name = Remote;
+			path = ../Remote;
 			sourceTree = "<group>";
 		};
 		8AF1A32B28B1520400C66F0B /* Extenstions */ = {
@@ -464,15 +488,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A6A58FE28B28D3200033E10 /* NetworkHelper.swift in Sources */,
+				8A6A58FE28B28D3200033E10 /* NetworkRequest.swift in Sources */,
 				8AF1A33A28B156CD00C66F0B /* HomeUseCase.swift in Sources */,
+				8A86979928B63971009057D1 /* NetworkDomains.swift in Sources */,
 				8AF1A32F28B1525400C66F0B /* SplashViewModel.swift in Sources */,
 				8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */,
+				8A9E1C5B28B3C55500DF25BB /* HomeRemote.swift in Sources */,
 				8AF1A33628B156B200C66F0B /* HomeScreen.swift in Sources */,
 				8AF1A33C28B156D800C66F0B /* HomeRepoApi.swift in Sources */,
 				8AF1A33828B156C000C66F0B /* HomeViewModel.swift in Sources */,
 				8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */,
 				8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */,
+				8A86979C28B63EAD009057D1 /* LocalStorage.swift in Sources */,
 				8A6A590428B2971300033E10 /* HomeRepoCache.swift in Sources */,
 				8AF1A33128B1526900C66F0B /* SplashCoordinator.swift in Sources */,
 				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
@@ -481,6 +508,8 @@
 				8A6A590028B28E2600033E10 /* HomeFilterUseCase.swift in Sources */,
 				8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */,
 				8AF1A33F28B157A700C66F0B /* HomeCoordinator.swift in Sources */,
+				8A86979528B638CE009057D1 /* NetworkError.swift in Sources */,
+				8A86979728B63920009057D1 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

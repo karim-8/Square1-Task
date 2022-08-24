@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum urlEndPoint: String {
-    case baseUrl = "http://connect-demo.mobile1.io/square1/connect/v1/city"
-}
-
-
 struct request: RequestProtocol {
     let baseUrl: String?
     let qParameters: String?
@@ -23,6 +18,4 @@ struct request: RequestProtocol {
     var url: URL {
         return URL(string: baseUrl! + qParameters!)!
     }
-    
-    
 }

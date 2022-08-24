@@ -13,6 +13,8 @@ class HomeRepo {
     
     //MARK:- GET USER DATA
     func getCitiesData(type: String) -> (Data?, Error?) {
+        
+        //use casee or vm
         let parameters = type == "Home" ? "/users":"/users"
         let fullUrl = request(url: urlEndPoint.baseUrl.rawValue, param: parameters)
         var dataResult: Data?
