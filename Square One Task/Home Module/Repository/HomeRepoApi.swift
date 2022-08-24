@@ -7,31 +7,29 @@
 
 import Foundation
 
-/// Repo layer mission is get data wheter from
-/// Remote           --       Data Base "Core Data"
-class HomeRepo {
+protocol HomeRepoProtocol {
+    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+}
+class HomeRepo: HomeRepoProtocol {
     
-    //MARK:- GET USER DATA
-    func getCitiesData(type: String) -> (Data?, Error?) {
-        
-        //use casee or vm
-        let parameters = type == "Home" ? "/users":"/users"
-        let fullUrl = request(url: urlEndPoint.baseUrl.rawValue, param: parameters)
-        var dataResult: Data?
-        var errorResult: Error?
-        
-        
-        NetworkClient().get(url: fullUrl) {  result in
+    //MARK:- PROPERTIES
+    let remote = HomeRemote()
+    var remoteData = CitiesDataModel()
+
+    
+    //MARK:- GET CITIES DATA
+    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+ 
+        remote.getCitiesData(urlPath: urlPath) { result in
             switch result {
             case .success(let data):
-                print("Data from the view model is.....\(data)")
-                dataResult = data
-                //self?.decodeJsonResult(jsonData: data)
+                completion(.success(data))
+                return
+                
             case .failure(let error):
-                errorResult = error
-                print("Error while fetchhing data...\(error)")
+                completion(.failure(error))
+                return
             }
         }
-        return (dataResult,errorResult)
     }
 }

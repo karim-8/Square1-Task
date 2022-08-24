@@ -8,18 +8,27 @@
 import Foundation
 
 protocol HomeRemoteProtocol {
-    func getData() -> CitiesDataModel?
+    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 
 class HomeRemote: HomeRemoteProtocol {
+    
+    var remoteData = CitiesDataModel()
 
-    
-    
-    //MARK:- PROPERRTIES
-    func getData() -> CitiesDataModel? {
-        return nil
+    func getCitiesData(urlPath: URLRequest, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+        NetworkClient().get(url: urlPath) { [weak self] result in
+            switch result {
+                
+            case .success(let data):
+                self?.remoteData = JsonDataDecoder().decodeJsonResult(jsonData: data, model: CitiesDataModel())
+                completion(.success(self?.remoteData ?? CitiesDataModel()))
+                return
+                
+            case .failure(let error):
+                print("Saaaadly I received \(error)")
+                completion(.failure(error))
+                return
+            }
+        }
     }
-    
-
-    
 }

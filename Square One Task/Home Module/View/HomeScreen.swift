@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class HomeScreenViewController: UIViewController {
 
     //MARK:- PROPERTIES
     var viewModel: HomeViewModel?
@@ -17,64 +17,53 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
     var fakeData = ["Karims","Madlene","Tomhas"]
     var filterdData: [String]?
     
+    var worldData = [Items]()
     
+
+    //MARK:- VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
-        citiesTableView.separatorColor = .blue
+        setupTableView()
         setuptTableViewCell()
         setupSearchData()
+        
     }
     
+    //MARK:- SETUP TABLE VIEW
+    private func setupTableView() {
+        citiesTableView.separatorColor = .blue
+    }
+    
+    //MARK:- SETUP SEARCH BAR
     private func setupSearchData() {
        searchBar.delegate = self
        filterdData = fakeData
     }
     
-    //MARK:- Setup Table View Cell
+    //MARK:- SETUP TABLE VIEW CELL
     private func setuptTableViewCell() {
         let nib = UINib(nibName: HomeTableViewCell.cellIdentifier, bundle: nil)
         citiesTableView.register(nib, forCellReuseIdentifier: HomeTableViewCell.cellIdentifier)
         citiesTableView.reloadData()
     }
-}
-
-
-extension HomeScreenViewController {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return filterdData?.count ?? 0
+    
+    //MARK:- FETCH USER DATA
+    private func fetchUserData() {
+        viewModel?.getData()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
-        let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifier, for: indexPath) as! HomeTableViewCell
-        cell.countryLabel.text = filterdData?[indexPath.row]
-        cell.cityLabel.text = filterdData?[indexPath.row]
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
-
-    }
-    
-    
-}
-
-extension HomeScreenViewController {
-
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-     filterdData = []
-        
-        if searchText == "" {
-            filterdData = fakeData
+    private func getDaa() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
+            userData = viewModel?.getUserData() ?? [UsersDataModel]()
+            dataListItems.reloadData()
         }
-        
-        for word in fakeData {
-            if word.uppercased().contains(searchText.uppercased()) {
-                filterdData?.append(word)
-            }
-        }
-        citiesTableView.reloadData()
+    }
+    
+    //MARK:- DEINIT
+    deinit {
+        viewModel = nil
     }
 }
+
+
+

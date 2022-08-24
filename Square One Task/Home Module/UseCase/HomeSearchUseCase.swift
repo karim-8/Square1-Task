@@ -1,23 +1,22 @@
 //
-//  HomeUseCase.swift
+//  HomeFilterUseCase.swift
 //  Square One Task
 //
-//  Created by Karim Soliman on 20/08/2022.
+//  Created by Karim Soliman on 21/08/2022.
 //
 
 import Foundation
-
-protocol HomeUseCaseProtocol {
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+protocol HomeSearchUseCaseProtocol {
+    func getSearchData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
 }
 
-class HomeUseCase: HomeUseCaseProtocol {
+class HomeSearchUseCase: HomeSearchUseCaseProtocol {
     
     //MARK- PROPERTIES
     let repo = HomeRepo()
     
     //MARK:- GET SEARCH DATA
-    func getCitiesData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getSearchData(urlPath: URLRequest,completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
         
         repo.getCitiesData(urlPath: urlPath) {  result in
             switch result {
