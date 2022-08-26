@@ -30,9 +30,9 @@ class HomeViewModel {
     }
     
     //MARK:- GET DATA
-    func getData(page: Int) {
+    func getData(page: Int, isFilter: Bool, filteredText: String) {
         isPaginating = true
-            usecase.getCitiesData(urlPath: setFullDataUrl(pageNum: page)) { [weak self] result in
+            usecase.getCitiesData(urlPath: setFullDataUrl(pageNum: page, isFilter: isFilter, filterText: filteredText)) { [weak self] result in
                 switch result {
                 case .success(let data):
                     self?.dataNames = data.data?.items ?? [Items]()
@@ -49,11 +49,13 @@ class HomeViewModel {
             }
     }
     
-    func setFullDataUrl(pageNum: Int) -> request {
+    func setFullDataUrl(pageNum: Int, isFilter: Bool, filterText: String) -> request {
         let baseUrl = Constants.baseUrl
         let paramters = "\(Constants.filter)ka&\(Constants.page)\(pageNum)&\(Constants.include)"
-     return request(url: baseUrl, param: paramters)
+        let filterParameters = "\(Constants.filter)\(filterText)"
+        return request(url: baseUrl, param: isFilter ? filterParameters : paramters )
     }
+    
     
     func getFullData() -> [Items] {
         return dataNames
@@ -63,7 +65,7 @@ class HomeViewModel {
     -> Bool {
         if isPaginating == false && postion > height && page < 15 {
             currentPage+=1
-            getData(page: currentPage)
+            getData(page: currentPage, isFilter: false, filteredText: "")
             print(dataNames.count)
             return true
         }

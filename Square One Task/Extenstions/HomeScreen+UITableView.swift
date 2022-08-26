@@ -10,15 +10,15 @@ import UIKit
 extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return worldData.count
+       return worldDataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.cellIdentifier, for: indexPath) as! HomeTableViewCell
         
-        cell.countryLabel.text = worldData[indexPath.row].name
-        cell.cityLabel.text = worldData[indexPath.row].country?.name
+        cell.countryLabel.text = worldDataArray[indexPath.row].name
+        cell.cityLabel.text = worldDataArray[indexPath.row].country?.name
         return cell
     }
     

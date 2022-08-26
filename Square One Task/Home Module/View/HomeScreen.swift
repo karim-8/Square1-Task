@@ -7,18 +7,23 @@
 
 import UIKit
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, UISearchControllerDelegate, UISearchResultsUpdating {
+    
+
+    
 
     //MARK:- PROPERTIES
     var viewModel: HomeViewModel?
     private var coordinator: HomeCoordinator?
     @IBOutlet weak var citiesTableView: UITableView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    //@IBOutlet weak var searchBar: UISearchBar!
     var pageNumber = 1
-    var worldData = [Items]()
+    var worldDataArray = [Items]()
+    var filterdData = [Items]()
     let spinner = UIActivityIndicatorView()
+    let searchBarController = UISearchController()
     
-
+    
     //MARK:- VIEW DID LOAD
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +33,15 @@ class HomeScreenViewController: UIViewController {
         setuptTableViewCell()
         setupSearchData()
         updateView()
+        setupSearchBar()
+    }
+    
+    //MARK:- SETUP SEARCH BAR
+    private func setupSearchBar() {
+        title = "search"
+        searchBarController.delegate = self
+        searchBarController.searchResultsUpdater = self
+        navigationItem.searchController = searchBarController
     }
     
     //MARK:- SETUP VIEW
@@ -37,16 +51,16 @@ class HomeScreenViewController: UIViewController {
     }
     
     //MARK:- FETCH USER DATA
-    private func fetchUserData() {
+     func fetchUserData() {
         view.addSubview(createSpinnerView())
-        viewModel?.getData(page: pageNumber)
+        viewModel?.getData(page: pageNumber, isFilter: false, filteredText: "")
     }
     
     //MARK:- UPDATE VIEW
-    private func updateView() {
+     func updateView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
             if (viewModel?.getFullData().count)! > 0 {
-                worldData = viewModel?.getFullData() ?? [Items]()
+                worldDataArray = viewModel?.getFullData() ?? [Items]()
                 citiesTableView.reloadData()
                 stopSpinner()
             }
@@ -60,7 +74,7 @@ class HomeScreenViewController: UIViewController {
     
     //MARK:- SETUP SEARCH BAR
     private func setupSearchData() {
-       searchBar.delegate = self
+       //searchBar.delegate = self
       // filterdData = fakeData
     }
     
@@ -95,7 +109,7 @@ class HomeScreenViewController: UIViewController {
     
  //MARK:- ADD MORE PAGES
     func addMorePages() {
-                worldData.append(contentsOf: viewModel?.getFullData() ?? [Items]())
+                worldDataArray.append(contentsOf: viewModel?.getFullData() ?? [Items]())
                 citiesTableView.reloadData()
                 stopSpinner()
     }
