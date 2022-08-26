@@ -16,6 +16,7 @@ class HomeScreenViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     var pageNumber = 1
     var worldData = [Items]()
+    let spinner = UIActivityIndicatorView()
     
 
     //MARK:- VIEW DID LOAD
@@ -37,14 +38,18 @@ class HomeScreenViewController: UIViewController {
     
     //MARK:- FETCH USER DATA
     private func fetchUserData() {
+        view.addSubview(createSpinnerView())
         viewModel?.getData(page: pageNumber)
     }
     
     //MARK:- UPDATE VIEW
     private func updateView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-            worldData = viewModel?.getFullData() ?? [Items]()
-            citiesTableView.reloadData()
+            if (viewModel?.getFullData().count)! > 0 {
+                worldData = viewModel?.getFullData() ?? [Items]()
+                citiesTableView.reloadData()
+                stopSpinner()
+            }
         }
     }
     
@@ -66,22 +71,37 @@ class HomeScreenViewController: UIViewController {
         citiesTableView.reloadData()
     }
     
+    //MARK:- CREATE SPINNER VIEW
+    func createSpinnerView() -> UIView {
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100))
+        spinner.center = footerView.center
+        footerView.addSubview(spinner)
+        spinner.startAnimating()
+        return footerView
+    }
+    
+    //MARK:- LOAD SPINNER
+    func loadSpinner() {
+        self.citiesTableView.tableFooterView = createSpinnerView()
+    }
+    
+    //MARK:- STOP SPINNER
+    func stopSpinner() {
+        DispatchQueue.main.async {
+            self.spinner.stopAnimating()
+            self.citiesTableView.tableFooterView = nil
+        }
+    }
+    
+ //MARK:- ADD MORE PAGES
+    func addMorePages() {
+                worldData.append(contentsOf: viewModel?.getFullData() ?? [Items]())
+                citiesTableView.reloadData()
+                stopSpinner()
+    }
+    
     //MARK:- DEINIT
     deinit {
         viewModel = nil
-    }
-}
-
-
-
-extension HomeScreenViewController: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let position = scrollView.contentOffset.y
-        if position > citiesTableView.contentSize.height-100-scrollView.frame.size.height {
-            pageNumber+=1
-            viewModel?.getData(page: pageNumber)
-            updateView()
-            
-        }
     }
 }
