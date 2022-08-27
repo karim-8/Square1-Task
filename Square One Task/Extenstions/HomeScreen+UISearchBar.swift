@@ -32,7 +32,7 @@ extension HomeScreenViewController: UISearchBarDelegate {
     }
     
     func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchBarController.searchBar.text else {
+        guard let _ = searchBarController.searchBar.text else {
             return
         }
         filterdData = []

@@ -22,7 +22,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         title = "Map View"
        // navigationItem.title = "Tes"
         navigationController?.navigationBar.backgroundColor = .white
-        navigationController?.navigationBar.backItem
         
     }
     

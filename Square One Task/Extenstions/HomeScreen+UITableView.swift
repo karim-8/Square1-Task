@@ -25,7 +25,7 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Destination is ... \n \(worldDataArray[indexPath.row].lat) \n \(worldDataArray[indexPath.row].lng)")
+        ///print("Destination is ... \n \(worldDataArray[indexPath.row].lat) \n \(worldDataArray[indexPath.row].lng)")
         coordinator?.navigateTo(view: self, lat: worldDataArray[indexPath.row].lat ?? 0.0, long: worldDataArray[indexPath.row].lng ?? 0.0)
         
     }

@@ -10,7 +10,6 @@
 		8A6A58FE28B28D3200033E10 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A58FD28B28D3200033E10 /* NetworkRequest.swift */; };
 		8A6A590028B28E2600033E10 /* HomeSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A58FF28B28E2600033E10 /* HomeSearchUseCase.swift */; };
 		8A6A590228B2902000033E10 /* CitiesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A590128B2902000033E10 /* CitiesDataModel.swift */; };
-		8A6A590428B2971300033E10 /* HomeRepoCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A590328B2971300033E10 /* HomeRepoCache.swift */; };
 		8A86979528B638CE009057D1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979428B638CE009057D1 /* NetworkError.swift */; };
 		8A86979728B63920009057D1 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979628B63920009057D1 /* RequestProtocol.swift */; };
 		8A86979928B63971009057D1 /* NetworkDomains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A86979828B63971009057D1 /* NetworkDomains.swift */; };
@@ -22,6 +21,8 @@
 		8A9465A728B9324B00B7C80A /* HomeScreen+UIScrolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9465A628B9324B00B7C80A /* HomeScreen+UIScrolView.swift */; };
 		8A9465AA28B9569800B7C80A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9465A928B9569800B7C80A /* MapViewController.swift */; };
 		8A9E1C5B28B3C55500DF25BB /* HomeRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */; };
+		8AA1D61128BA4E61004FD04F /* CitiesData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */; };
+		8AA1D61228BA4E61004FD04F /* CitiesData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */; };
 		8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */; };
 		8AE3DB1B28B1811400214BE6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */; };
 		8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1D28B1890600214BE6 /* NetworkService.swift */; };
@@ -65,7 +66,6 @@
 		8A6A58FD28B28D3200033E10 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		8A6A58FF28B28E2600033E10 /* HomeSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchUseCase.swift; sourceTree = "<group>"; };
 		8A6A590128B2902000033E10 /* CitiesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesDataModel.swift; sourceTree = "<group>"; };
-		8A6A590328B2971300033E10 /* HomeRepoCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepoCache.swift; sourceTree = "<group>"; };
 		8A86979428B638CE009057D1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8A86979628B63920009057D1 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		8A86979828B63971009057D1 /* NetworkDomains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDomains.swift; sourceTree = "<group>"; };
@@ -77,6 +77,8 @@
 		8A9465A628B9324B00B7C80A /* HomeScreen+UIScrolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreen+UIScrolView.swift"; sourceTree = "<group>"; };
 		8A9465A928B9569800B7C80A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemote.swift; sourceTree = "<group>"; };
+		8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		8AE3DB1D28B1890600214BE6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -170,6 +172,15 @@
 				8A9465A928B9569800B7C80A /* MapViewController.swift */,
 			);
 			path = "Map Module";
+			sourceTree = "<group>";
+		};
+		8AA1D61328BA4EC0004FD04F /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */,
+				8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */,
+			);
+			path = "Core Data Models";
 			sourceTree = "<group>";
 		};
 		8AE3DB1728B180FB00214BE6 /* Home Cell */ = {
@@ -334,7 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				8AF1A33B28B156D800C66F0B /* HomeRepoApi.swift */,
-				8A6A590328B2971300033E10 /* HomeRepoCache.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -369,6 +379,7 @@
 		8AF1A32D28B1521D00C66F0B /* Caching */ = {
 			isa = PBXGroup;
 			children = (
+				8AA1D61328BA4EC0004FD04F /* Core Data Models */,
 				8AF1A2F628B1374B00C66F0B /* Square_One_Task.xcdatamodeld */,
 			);
 			path = Caching;
@@ -552,11 +563,12 @@
 				8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */,
 				8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */,
 				8A86979C28B63EAD009057D1 /* LocalStorage.swift in Sources */,
-				8A6A590428B2971300033E10 /* HomeRepoCache.swift in Sources */,
+				8AA1D61128BA4E61004FD04F /* CitiesData+CoreDataClass.swift in Sources */,
 				8AF1A33128B1526900C66F0B /* SplashCoordinator.swift in Sources */,
 				8A8697A428B6C43C009057D1 /* HomeScreen+UISearchBar.swift in Sources */,
 				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
 				8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */,
+				8AA1D61228BA4E61004FD04F /* CitiesData+CoreDataProperties.swift in Sources */,
 				8A6A590228B2902000033E10 /* CitiesDataModel.swift in Sources */,
 				8A6A590028B28E2600033E10 /* HomeSearchUseCase.swift in Sources */,
 				8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */,

@@ -9,9 +9,6 @@ import UIKit
 
 class HomeScreenViewController: UIViewController, UISearchControllerDelegate, UISearchResultsUpdating {
     
-
-    
-
     //MARK:- PROPERTIES
     var viewModel: HomeViewModel?
     var coordinator: HomeCoordinator?
@@ -22,7 +19,10 @@ class HomeScreenViewController: UIViewController, UISearchControllerDelegate, UI
     var filterdData = [Items]()
     let spinner = UIActivityIndicatorView()
     let searchBarController = UISearchController()
-    
+
+    var testMe = [CitiesData]()
+//
+
     
     //MARK:- VIEW DID LOAD
     override func viewDidLoad() {
@@ -109,9 +109,9 @@ class HomeScreenViewController: UIViewController, UISearchControllerDelegate, UI
     
  //MARK:- ADD MORE PAGES
     func addMorePages() {
-                worldDataArray.append(contentsOf: viewModel?.getFullData() ?? [Items]())
-                citiesTableView.reloadData()
-                stopSpinner()
+        worldDataArray.append(contentsOf: viewModel?.getFullData() ?? [Items]())
+        citiesTableView.reloadData()
+        stopSpinner()
     }
     
     //MARK:- DEINIT
