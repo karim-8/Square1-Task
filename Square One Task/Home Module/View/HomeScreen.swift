@@ -14,7 +14,7 @@ class HomeScreenViewController: UIViewController, UISearchControllerDelegate, UI
 
     //MARK:- PROPERTIES
     var viewModel: HomeViewModel?
-    private var coordinator: HomeCoordinator?
+    var coordinator: HomeCoordinator?
     @IBOutlet weak var citiesTableView: UITableView!
     //@IBOutlet weak var searchBar: UISearchBar!
     var pageNumber = 1

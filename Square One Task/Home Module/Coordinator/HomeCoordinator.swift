@@ -11,7 +11,7 @@ import Foundation
 import UIKit
 
 protocol HomeCoordinatorProtocol {
-    func navigateTo(view: UIViewController)
+    func navigateTo(view: UIViewController, lat: Double , long: Double)
 }
 
 class HomeCoordinator: HomeCoordinatorProtocol {
@@ -21,22 +21,22 @@ class HomeCoordinator: HomeCoordinatorProtocol {
     
     
     //MARK:- NAVIGATE TO
-    func navigateTo(view: UIViewController) {
-//        let viewModel: HomeViewModel = HomeViewModel(coordinator: HomeCoordinator, view: view)
-//
-//        //Instantiate the storyboard
-//        let homeViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "home") as? HomeScreenViewController
-//
-//        //Any related data to the view
-//        homeViewController?.viewModel =  viewModel
-//
-//        //navigation proccess
-//        if let vc = homeViewController {
-//            let navigationController = UINavigationController(rootViewController:  vc)
-//
-//            navigationController.modalPresentationStyle = .fullScreen
-//            navigationController.modalTransitionStyle = .crossDissolve
-//            view.present(navigationController, animated: true, completion: nil)
-//        }
+    func navigateTo(view: UIViewController, lat: Double , long: Double) {
+
+        //Instantiate the storyboard
+        let mapViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "map") as? MapViewController
+
+        //Any related data to the view
+        mapViewController?.latitude = lat
+        mapViewController?.longitiude = long
+
+        //navigation proccess
+        if let vc = mapViewController {
+            let navigationController = UINavigationController(rootViewController:  vc)
+
+            navigationController.modalPresentationStyle = .fullScreen
+            navigationController.modalTransitionStyle = .crossDissolve
+            view.present(navigationController, animated: true, completion: nil)
+        }
     }
 }

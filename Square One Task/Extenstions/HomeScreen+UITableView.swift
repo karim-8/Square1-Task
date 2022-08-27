@@ -19,7 +19,15 @@ extension HomeScreenViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.countryLabel.text = worldDataArray[indexPath.row].name
         cell.cityLabel.text = worldDataArray[indexPath.row].country?.name
+        
+       // cell.view = view
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Destination is ... \n \(worldDataArray[indexPath.row].lat) \n \(worldDataArray[indexPath.row].lng)")
+        coordinator?.navigateTo(view: self, lat: worldDataArray[indexPath.row].lat ?? 0.0, long: worldDataArray[indexPath.row].lng ?? 0.0)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

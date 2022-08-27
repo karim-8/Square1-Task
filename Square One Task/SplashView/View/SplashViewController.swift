@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     
     //MARK:- SETUP VIEW
     private func setupView() {
-
         viewModel = SplashViewModel(coordinator: coordinator, view: self)
     }
     
