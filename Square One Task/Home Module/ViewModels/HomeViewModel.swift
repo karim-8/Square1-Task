@@ -40,7 +40,6 @@ class HomeViewModel {
                     return
                     
                 case .failure(let error):
-                    print("Errrrror is ....\(error)")
                     self?.isPaginating = false
                     //View Alert controller with error
                    /// completion(.failure(error))
