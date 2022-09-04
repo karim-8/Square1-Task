@@ -2,13 +2,13 @@
 //  CitiesData+CoreDataProperties.swift
 //  Square One Task
 //
-//  Created by Karim Soliman on 27/08/2022.
+//  Created by Karim Soliman on 04/09/2022.
 //
 //
 
 import Foundation
 import CoreData
-
+import UIKit
 
 extension CitiesData {
 
@@ -16,11 +16,7 @@ extension CitiesData {
         return NSFetchRequest<CitiesData>(entityName: "CitiesData")
     }
 
-    @NSManaged public var country: String?
-    @NSManaged public var lat: Double
-    @NSManaged public var lng: Double
-    @NSManaged public var name: String?
-    @NSManaged public var pagesNumber: Int16
+    @NSManaged public var citiesJosn: Data?
 
 }
 

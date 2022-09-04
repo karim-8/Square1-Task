@@ -21,11 +21,12 @@
 		8A9465A728B9324B00B7C80A /* HomeScreen+UIScrolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9465A628B9324B00B7C80A /* HomeScreen+UIScrolView.swift */; };
 		8A9465AA28B9569800B7C80A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9465A928B9569800B7C80A /* MapViewController.swift */; };
 		8A9E1C5B28B3C55500DF25BB /* HomeRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */; };
-		8AA1D61128BA4E61004FD04F /* CitiesData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */; };
-		8AA1D61228BA4E61004FD04F /* CitiesData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */; };
 		8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */; };
 		8AE3DB1B28B1811400214BE6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */; };
 		8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3DB1D28B1890600214BE6 /* NetworkService.swift */; };
+		8AE3F56728C505A30091136A /* CitiesData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3F56528C505A30091136A /* CitiesData+CoreDataClass.swift */; };
+		8AE3F56828C505A30091136A /* CitiesData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3F56628C505A30091136A /* CitiesData+CoreDataProperties.swift */; };
+		8AE3F56A28C50DF90091136A /* HomeRepo+DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE3F56928C50DF90091136A /* HomeRepo+DB.swift */; };
 		8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */; };
 		8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */; };
 		8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF1A2F128B1374B00C66F0B /* SplashViewController.swift */; };
@@ -77,11 +78,12 @@
 		8A9465A628B9324B00B7C80A /* HomeScreen+UIScrolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeScreen+UIScrolView.swift"; sourceTree = "<group>"; };
 		8A9465A928B9569800B7C80A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		8A9E1C5A28B3C55500DF25BB /* HomeRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemote.swift; sourceTree = "<group>"; };
-		8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesData+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CitiesData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8AE3DB1828B1811400214BE6 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8AE3DB1928B1811400214BE6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		8AE3DB1D28B1890600214BE6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		8AE3F56528C505A30091136A /* CitiesData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CitiesData+CoreDataClass.swift"; path = "Square One Task/Caching/Core Data Models/CitiesData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8AE3F56628C505A30091136A /* CitiesData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CitiesData+CoreDataProperties.swift"; path = "Square One Task/Caching/Core Data Models/CitiesData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8AE3F56928C50DF90091136A /* HomeRepo+DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeRepo+DB.swift"; sourceTree = "<group>"; };
 		8AF1A2EA28B1374B00C66F0B /* Square One Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Square One Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF1A2ED28B1374B00C66F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF1A2EF28B1374B00C66F0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,8 +179,6 @@
 		8AA1D61328BA4EC0004FD04F /* Core Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				8AA1D60F28BA4E61004FD04F /* CitiesData+CoreDataClass.swift */,
-				8AA1D61028BA4E61004FD04F /* CitiesData+CoreDataProperties.swift */,
 			);
 			path = "Core Data Models";
 			sourceTree = "<group>";
@@ -204,6 +204,8 @@
 		8AF1A2E128B1374B00C66F0B = {
 			isa = PBXGroup;
 			children = (
+				8AE3F56528C505A30091136A /* CitiesData+CoreDataClass.swift */,
+				8AE3F56628C505A30091136A /* CitiesData+CoreDataProperties.swift */,
 				8AF1A2EC28B1374B00C66F0B /* Square One Task */,
 				8AF1A30628B1374E00C66F0B /* Square One TaskTests */,
 				8AF1A31028B1374E00C66F0B /* Square One TaskUITests */,
@@ -345,6 +347,7 @@
 			isa = PBXGroup;
 			children = (
 				8AF1A33B28B156D800C66F0B /* HomeRepoApi.swift */,
+				8AE3F56928C50DF90091136A /* HomeRepo+DB.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -551,28 +554,29 @@
 			files = (
 				8A6A58FE28B28D3200033E10 /* NetworkRequest.swift in Sources */,
 				8AF1A33A28B156CD00C66F0B /* HomeUseCase.swift in Sources */,
+				8AE3F56A28C50DF90091136A /* HomeRepo+DB.swift in Sources */,
 				8A86979928B63971009057D1 /* NetworkDomains.swift in Sources */,
 				8AF1A32F28B1525400C66F0B /* SplashViewModel.swift in Sources */,
 				8AF1A2F828B1374B00C66F0B /* Square_One_Task.xcdatamodeld in Sources */,
 				8A9E1C5B28B3C55500DF25BB /* HomeRemote.swift in Sources */,
 				8A9465A728B9324B00B7C80A /* HomeScreen+UIScrolView.swift in Sources */,
 				8AF1A33628B156B200C66F0B /* HomeScreen.swift in Sources */,
+				8AE3F56728C505A30091136A /* CitiesData+CoreDataClass.swift in Sources */,
 				8A8697A728B6CAAA009057D1 /* Constants.swift in Sources */,
 				8AF1A33C28B156D800C66F0B /* HomeRepoApi.swift in Sources */,
 				8AF1A33828B156C000C66F0B /* HomeViewModel.swift in Sources */,
 				8AE3DB1A28B1811400214BE6 /* HomeTableViewCell.swift in Sources */,
 				8AF1A2F228B1374B00C66F0B /* SplashViewController.swift in Sources */,
 				8A86979C28B63EAD009057D1 /* LocalStorage.swift in Sources */,
-				8AA1D61128BA4E61004FD04F /* CitiesData+CoreDataClass.swift in Sources */,
 				8AF1A33128B1526900C66F0B /* SplashCoordinator.swift in Sources */,
 				8A8697A428B6C43C009057D1 /* HomeScreen+UISearchBar.swift in Sources */,
 				8AF1A2EE28B1374B00C66F0B /* AppDelegate.swift in Sources */,
 				8AF1A2F028B1374B00C66F0B /* SceneDelegate.swift in Sources */,
-				8AA1D61228BA4E61004FD04F /* CitiesData+CoreDataProperties.swift in Sources */,
 				8A6A590228B2902000033E10 /* CitiesDataModel.swift in Sources */,
 				8A6A590028B28E2600033E10 /* HomeSearchUseCase.swift in Sources */,
 				8AE3DB1E28B1890600214BE6 /* NetworkService.swift in Sources */,
 				8A86979E28B644A7009057D1 /* JsonDataDecoder.swift in Sources */,
+				8AE3F56828C505A30091136A /* CitiesData+CoreDataProperties.swift in Sources */,
 				8A8697A228B6C424009057D1 /* HomeScreen+UITableView.swift in Sources */,
 				8AF1A33F28B157A700C66F0B /* HomeCoordinator.swift in Sources */,
 				8A86979528B638CE009057D1 /* NetworkError.swift in Sources */,
