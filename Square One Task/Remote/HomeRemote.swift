@@ -6,23 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 protocol HomeRemoteProtocol {
-    func getCitiesData(urlPath: RequestProtocol,completion: @escaping (Result<CitiesDataModel,Error>)-> ())
+    func getCitiesData(urlPath: RequestProtocol,completion: @escaping (Result<Data,Error>)-> ())
 }
 
 class HomeRemote: HomeRemoteProtocol {
     
     var remoteData = CitiesDataModel()
+    
 
-    func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
+    func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<Data,Error>)-> ()) {
 
-        NetworkClient().get(url: urlPath) { [weak self] result in
+        NetworkClient().get(url: urlPath) {  result in
             switch result {
                 
             case .success(let data):
-                self?.remoteData = JsonDataDecoder().decodeJsonResult(jsonData: data, model: CitiesDataModel())
-                completion(.success(self?.remoteData ?? CitiesDataModel()))
+                completion(.success(data))
                 return
                 
             case .failure(let error):

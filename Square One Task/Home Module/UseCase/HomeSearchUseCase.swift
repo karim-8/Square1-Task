@@ -21,7 +21,6 @@ class HomeSearchUseCase: HomeSearchUseCaseProtocol {
         repo.getCitiesData(urlPath: urlPath) {  result in
             switch result {
             case .success(let data):
-                print("Succcccccess from useCase")
                 completion(.success(data))
                 return
                 
