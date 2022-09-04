@@ -13,7 +13,7 @@ protocol HomeRemoteProtocol {
 
 class HomeRemote: HomeRemoteProtocol {
     
-    var remoteData = CitiesDataModel()
+    var remoteData = [CitiesDataModel]()
 
     func getCitiesData(urlPath: RequestProtocol, completion: @escaping (Result<CitiesDataModel,Error>)-> ()) {
 
@@ -21,8 +21,12 @@ class HomeRemote: HomeRemoteProtocol {
             switch result {
                 
             case .success(let data):
-                self?.remoteData = JsonDataDecoder().decodeJsonResult(jsonData: data, model: CitiesDataModel())
-                completion(.success(self?.remoteData ?? CitiesDataModel()))
+                var testData = JsonDataDecoder().decodeJsonResult(jsonData: data, model: [CitiesDataModelElement]().self)
+                
+                print("Data are..... ${}")
+                print(testData)
+                
+                //completion(.success(self?.remoteData ?? CitiesDataModel()))
                 return
                 
             case .failure(let error):

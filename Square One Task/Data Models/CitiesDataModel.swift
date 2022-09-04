@@ -5,7 +5,41 @@
 //  Created by Karim Soliman on 21/08/2022.
 //
 
-struct CitiesDataModel : Codable {
+
+import Foundation
+
+// MARK: - CitiesDataModelElement
+struct CitiesDataModelElement: Codable {
+    let id: Int?
+    let name, username, email: String?
+    let address: Address?
+    let phone, website: String?
+    let company: Company?
+}
+
+// MARK: - Address
+struct Address: Codable {
+    let street, suite, city, zipcode: String?
+    let geo: Geo?
+}
+
+// MARK: - Geo
+struct Geo: Codable {
+    let lat, lng: String?
+}
+
+// MARK: - Company
+struct Company: Codable {
+    let name, catchPhrase, bs: String?
+}
+
+typealias CitiesDataModel = [CitiesDataModelElement]
+
+
+
+
+
+struct CitiesDataModel2 : Codable {
     var data : DataClass?
     var time : Int?
 }

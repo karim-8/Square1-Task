@@ -35,7 +35,7 @@ class HomeViewModel {
             usecase.getCitiesData(urlPath: setFullDataUrl(pageNum: page, isFilter: isFilter, filterText: filteredText)) { [weak self] result in
                 switch result {
                 case .success(let data):
-                    self?.dataNames = data.data?.items ?? [Items]()
+             //       self?.dataNames = data.data?.items ?? [Items]()
                     self?.isPaginating = false
                     return
                     
@@ -50,10 +50,13 @@ class HomeViewModel {
     }
     
     func setFullDataUrl(pageNum: Int, isFilter: Bool, filterText: String) -> request {
-        let baseUrl = Constants.baseUrl
-        let paramters = "\(Constants.filter)ka&\(Constants.page)\(pageNum)&\(Constants.include)"
-        let filterParameters = "\(Constants.filter)\(filterText)"
-        return request(url: baseUrl, param: isFilter ? filterParameters : paramters )
+//        let baseUrl = Constants.baseUrl
+//        let paramters = "\(Constants.filter)ka&\(Constants.page)\(pageNum)&\(Constants.include)"
+//        let filterParameters = "\(Constants.filter)\(filterText)"
+//        return request(url: baseUrl, param: isFilter ? filterParameters : paramters )
+        
+        let base = "https://jsonplaceholder.typicode.com/users"
+        return request(url: base, param: "")
     }
     
     
